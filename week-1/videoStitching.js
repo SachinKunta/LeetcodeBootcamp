@@ -1,8 +1,8 @@
 var videoStitching = function(clips, T) {
     clips.sort((a,b)=>a[0]-b[0]);
-    var res = 0;
-    var curr = [0,0];                
-    var temp = [0,0]; 
+    let res = 0;
+    let curr = [0,0];                
+    let temp = [0,0]; 
     for(i=0;i<clips.length;i++){ 
         if(clips[i][0]>curr[1]){
              res++;
